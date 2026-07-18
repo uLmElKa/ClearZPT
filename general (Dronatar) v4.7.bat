@@ -17,11 +17,16 @@ cd /d %BIN%
 
 start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,853,2053,2083,2087,2096,8443,25565,%GameFilterTCP% --wf-udp=%GameFilterUDP%,53-65535 ^
 
+--filter-udp=1400 
+--filter-l7=stun 
+--dpi-desync=fake 
+--dpi-desync-fake-stun=0x00 --new ^
+
 --filter-udp=19294-19344,50000-50032 ^
 --filter-l7=discord,stun ^
 --dpi-desync=fake ^
---dpi-desync-fake-discord="%BIN%quic_initial_dbankcloud_ru.bin" ^
---dpi-desync-fake-stun="%BIN%quic_initial_dbankcloud_ru.bin" ^
+--dpi-desync-fake-discord="%BIN%quic_initial_steamcommunity_com.bin" ^
+--dpi-desync-fake-stun="%BIN%quic_initial_steamcommunity_com.bin" ^
 --dpi-desync-repeats=6 --new ^
 
 --filter-tcp=443,2053,2083,2087,2096,8443 --hostlist="%LISTS%list-general.txt" ^ 

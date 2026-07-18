@@ -26,8 +26,8 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,853,2053,2083,2087,20
 --filter-udp=19294-19344,50000-50100 ^
 --filter-l7=discord,stun ^
 --dpi-desync=fake ^
---dpi-desync-fake-discord="%BIN%quic_initial_dbankcloud_ru.bin" ^
---dpi-desync-fake-stun="%BIN%quic_initial_dbankcloud_ru.bin" ^
+--dpi-desync-fake-discord="%BIN%quic_initial_steamcommunity_com.bin" ^
+--dpi-desync-fake-stun="%BIN%quic_initial_steamcommunity_com.bin" ^
 --dpi-desync-repeats=6 --new ^
 
 --filter-tcp=2053,2083,2087,2096,8443 --hostlist-domains=discord.media ^
@@ -91,11 +91,11 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,853,2053,2083,2087,20
 --dpi-desync-fake-tls="%BIN%tls_clienthello_4pda_to.bin" ^
 --dpi-desync-fake-http="%BIN%tls_clienthello_4pda_to.bin" ^
 --dpi-desync-fake-unknown="%BIN%stun.bin" ^
---dpi-desync-fake-unknown="%BIN%tls_clienthello_max_ru.bin"--new ^
+--dpi-desync-fake-unknown="%BIN%tls_clienthello_max_ru.bin" --new ^
 
 --filter-udp=%GameFilterUDP% --ipset="%LISTS%ipset-all.txt" --ipset-exclude="%LISTS%ipset-exclude.txt" --ipset-exclude="%LISTS%ipset-exclude-user.txt" ^
 --dpi-desync=fake ^
 --dpi-desync-any-protocol=1 ^
 --dpi-desync-cutoff=n4 ^
 --dpi-desync-repeats=12 ^
---dpi-desync-fake-unknown-udp="%BIN%quic_initial_dbankcloud_ru.bin"
+--dpi-desync-fake-unknown-udp="%BIN%stun.bin"
