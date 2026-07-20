@@ -9,9 +9,11 @@
 
 ### Discord
 DiscordMain           = "https://discord.com"
+DiscordApp            = "https://discordapp.com"
 DiscordGateway        = "https://gateway.discord.gg"
 DiscordCDN            = "https://cdn.discordapp.com"
 DiscordMedia          = "https://media.discordapp.net"
+DiscordGG             = "https://discord.gg"
 
 ### YouTube
 YouTubeWeb            = "https://www.youtube.com"
@@ -27,22 +29,49 @@ GoogleGstatic         = "https://www.gstatic.com"
 CloudflareWeb         = "https://www.cloudflare.com"
 CloudflareCDN         = "https://cdnjs.cloudflare.com"
 
-### New
-RobloxMain            = "https://roblox.com"
-Modrinth              = "https://modrinth.com"
-Amnezia               = "https://amnezia.org"
-Amazon                = "https://aws.amazon.com"
-Rutracker             = "https://rutracker.org"
-X                     = "https://x.com"
-CDN77                 = "https://cdn77.com"
-Hcaptcha              = "https://hcaptcha.com"
-Minecraft             = "https://minecraft.net"
-Mojang                = "https://mojang.com"
-CDNBunny              = "https://cdnbunny.org"
-Fastly                = "https://fastly.net"
+### Social
+TwitchGQL             = "https://gql.twitch.tv"
+Reddit                = "https://www.reddit.com"
+Pinterest             = "https://www.pinterest.com"
+
+### AI
+OpenAI                = "https://chatgpt.com"
+GitHubRaw             = "https://raw.githubusercontent.com"
+
+### Twitter
+TwitterX              = "https://x.com"
+TwitterAbs            = "https://abs.twimg.com"
+
+### Twitch
+TwitchWeb             = "https://www.twitch.tv"
 BetterTTV             = "https://cdn.betterttv.net"
 FrankerFacez          = "https://cdn.frankerfacez.com"
-Steam                 = "https://steampowered.com"
+
+### Minecraft
+Modrinth              = "https://modrinth.com"
+ModrinthApi           = "https://api.modrinth.com"
+MinecraftTextures     = "https://textures.minecraft.net"
+
+### Valorant
+ValorantMain           = "https://playvalorant.com"
+RiotGames              = "https://www.riotgames.com"
+RiotAuth               = "https://auth.riotgames.com"
+
+### CDNs
+CDNBunny              = "https://cdnbunny.org"
+CDN77                 = "https://cdn77.com"
+AmazonAWS             = "https://aws.amazon.com"
+Fastly                = "https://fastly.net"
+Akamai                = "https://www.akamai.com"
+CloudflarePages       = "https://pages.dev"
+
+### Others
+Rutracker             = "https://rutracker.org"
+
+### Gamelift
+GameliftUSEast1       = "https://gamelift.us-east-1.amazonaws.com"
+GameliftEUCentral1    = "https://gamelift.eu-central-1.amazonaws.com"
+GameliftAPNortheast1  = "https://gamelift.ap-northeast-1.amazonaws.com"
 
 ### Public DNS (PING-only)
 CloudflareDNS1111     = "PING:1.1.1.1"
