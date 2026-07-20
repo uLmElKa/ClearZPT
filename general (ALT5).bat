@@ -31,8 +31,8 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,2053,2083,2087,2096,8
 
 --filter-udp=19294-19344,50000-50100 --filter-l7=discord,stun ^
 --dpi-desync=fake ^
---dpi-desync-fake-discord="%BIN%quic_initial_steamcommunity_com.bin" ^
---dpi-desync-fake-stun="%BIN%quic_initial_steamcommunity_com.bin" ^
+--dpi-desync-fake-discord="%BIN%quic_initial_vk_com.bin" ^
+--dpi-desync-fake-stun="%BIN%quic_initial_vk_com.bin" ^
 --dpi-desync-repeats=6 --new ^
 
 --filter-l3=ipv4 --filter-tcp=80,443,2053,2083,2087,2096,8443 --ipset-exclude="%LISTS%ipset-exclude.txt" --ipset-exclude="%LISTS%ipset-exclude-user.txt" ^
@@ -52,5 +52,5 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,2053,2083,2087,2096,8
 --dpi-desync=fake ^
 --dpi-desync-repeats=14 ^
 --dpi-desync-any-protocol=1 ^
---dpi-desync-fake-unknown-udp="%BIN%stun.bin" ^
+--dpi-desync-fake-unknown-udp="%BIN%quic_initial_vk_com.bin" ^
 --dpi-desync-cutoff=n3
