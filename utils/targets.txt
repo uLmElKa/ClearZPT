@@ -43,7 +43,6 @@ TwitterX              = "https://x.com"
 TwitterAbs            = "https://abs.twimg.com"
 
 ### Twitch
-TwitchWeb             = "https://www.twitch.tv"
 BetterTTV             = "https://cdn.betterttv.net"
 FrankerFacez          = "https://cdn.frankerfacez.com"
 
