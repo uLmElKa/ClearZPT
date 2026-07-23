@@ -30,8 +30,8 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,2053,2083,2087,2096,8
 
 --filter-udp=19294-19344,50000-50100 --filter-l7=discord,stun ^
 --dpi-desync=fake ^
---dpi-desync-fake-discord="%BIN%quic_initial_vk_com.bin" ^
---dpi-desync-fake-stun="%BIN%quic_initial_vk_com.bin" ^
+--dpi-desync-fake-discord="%BIN%ACTIVE_DISCORD_UDP.bin" ^
+--dpi-desync-fake-stun="%BIN%ACTIVE_DISCORD_UDP.bin" ^
 --dpi-desync-repeats=6 --new ^
 
 --filter-tcp=2053,2083,2087,2096,8443 --hostlist-domains=discord.media ^
@@ -84,5 +84,5 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,2053,2083,2087,2096,8
 --dpi-desync=fake ^
 --dpi-desync-repeats=12 ^
 --dpi-desync-any-protocol=1 ^
---dpi-desync-fake-unknown-udp="%BIN%quic_initial_vk_com.bin" ^
+--dpi-desync-fake-unknown-udp="%BIN%ACTIVE_GAME_UDP.bin" ^
 --dpi-desync-cutoff=n2

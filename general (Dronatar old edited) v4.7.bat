@@ -25,8 +25,8 @@ start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,853,2053,2083,2087,20
 --filter-udp=19294-19344,50000-50032 ^
 --filter-l7=discord,stun ^
 --dpi-desync=fake ^
---dpi-desync-fake-discord="%BIN%quic_initial_vk_com.bin" ^
---dpi-desync-fake-stun="%BIN%quic_initial_vk_com.bin" ^
+--dpi-desync-fake-discord="%BIN%ACTIVE_DISCORD_UDP.bin" ^
+--dpi-desync-fake-stun="%BIN%ACTIVE_DISCORD_UDP.bin" ^
 --dpi-desync-repeats=6 --new ^
 
 --filter-tcp=443,2053,2083,2087,2096,8443 --hostlist="%LISTS%list-general.txt" ^ 
